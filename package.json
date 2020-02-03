@@ -1,0 +1,41 @@
+{
+  "name": "send-mail-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run prod",
+    "dev": "NODE_ENV=development babel-node ./src/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"**/*.js\"",
+    "server:prod": "node ./dist/server",
+    "clean": "rimraf dist",
+    "build": "babel ./src --out-dir dist",
+    "prod": "NODE_ENV=production npm run clean && npm run build && npm run server:prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pusher": "^3.0.0",
+    "pusher-js": "^5.0.3",
+    "rimraf": "^3.0.0",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-import": "^2.19.1"
+  }
+}

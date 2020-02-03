@@ -1,0 +1,5 @@
+env: flex
+runtime: nodejs
+env_variables:
+  NODE_ENV: 'production'
+  SENDGRID_API_KEY: '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'
