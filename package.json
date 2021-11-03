@@ -30,7 +30,7 @@
     "pusher": "^3.0.0",
     "pusher-js": "^5.0.3",
     "rimraf": "^3.0.0",
-    "validator": "^12.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint": "^6.7.2",
